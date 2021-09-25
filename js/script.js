@@ -4,14 +4,3 @@ document.getElementById("hamburger").onclick = function toggleMenu() {
       navToggle.item(i).classList.toggle("hidden");
     }
   };
-
-//  Download resume
-const downloadResume = () => {
-	  const a = document.createElement('a');
-	  a.href = `${window.location.origin}${Resume}`;
-	  // console.log(a.href);
-	  a.download = "JaredsResume.pdf";
-	  document.body.appendChild(a);
-	  a.click();
-	  document.body.removeChild(a);
-}
